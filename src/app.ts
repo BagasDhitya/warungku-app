@@ -1,4 +1,5 @@
 import express, { Application } from "express";
+import UserRouter from './routers/user.router'
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -14,6 +15,7 @@ class App {
 
     private initializeRoutes() {
         this.app.use(express.json());
+        this.app.use('/api', UserRouter)
     }
 
     public start() {
