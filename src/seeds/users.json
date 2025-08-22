@@ -1,0 +1,7 @@
+[
+  { "username": "andri", "email": "andri@mail.com", "password": "hashedpass1" },
+  { "username": "siti", "email": "siti@mail.com", "password": "hashedpass2" },
+  { "username": "budi", "email": "budi@mail.com", "password": "hashedpass3" },
+  { "username": "wulan", "email": "wulan@mail.com", "password": "hashedpass4" },
+  { "username": "eko", "email": "eko@mail.com", "password": "hashedpass5" }
+]

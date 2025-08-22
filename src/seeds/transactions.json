@@ -1,0 +1,7 @@
+[
+  { "id_invoice": "INV-001", "total_amount": 95000, "userId": 1 },
+  { "id_invoice": "INV-002", "total_amount": 45000, "userId": 2 },
+  { "id_invoice": "INV-003", "total_amount": 30000, "userId": 3 },
+  { "id_invoice": "INV-004", "total_amount": 15000, "userId": 4 },
+  { "id_invoice": "INV-005", "total_amount": 93000, "userId": 5 }
+]

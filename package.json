@@ -7,7 +7,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "prisma:migrate": "npx prisma migrate dev --name init",
-    "prisma:generate": "npx prisma generate"
+    "prisma:generate": "npx prisma generate",
+    "seed": "ts-node src/seeds/seed.ts"
   },
   "keywords": [],
   "author": "",

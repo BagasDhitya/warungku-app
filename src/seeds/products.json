@@ -1,0 +1,7 @@
+[
+  { "title": "Beras Ramos 5kg", "price": 65000, "stock": 100 },
+  { "title": "Minyak Goreng 2L", "price": 30000, "stock": 50 },
+  { "title": "Gula Pasir 1kg", "price": 15000, "stock": 200 },
+  { "title": "Telur Ayam 1kg", "price": 28000, "stock": 120 },
+  { "title": "Tepung Terigu 1kg", "price": 12000, "stock": 150 }
+]

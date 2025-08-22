@@ -1,0 +1,7 @@
+[
+  { "transactionId": 1, "productId": 1, "quantity": 1 },
+  { "transactionId": 1, "productId": 3, "quantity": 2 },
+  { "transactionId": 2, "productId": 2, "quantity": 1 },
+  { "transactionId": 3, "productId": 4, "quantity": 1 },
+  { "transactionId": 5, "productId": 5, "quantity": 3 }
+]
