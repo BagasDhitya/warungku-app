@@ -1,2 +1,4 @@
 {"email":"john.doee@mail.com","id":11,"level":"info","message":"New user created","timestamp":"2025-08-22 16:53:33"}
 {"email":"jane.smith@mail.com","id":12,"level":"info","message":"New user created","timestamp":"2025-08-22 16:55:00"}
+{"email":"andrew.clark@mail.com","id":13,"level":"info","message":"New user created","timestamp":"2025-08-22 16:59:23"}
+{"email":"bob.clark@mail.com","id":14,"level":"info","message":"New user created","timestamp":"2025-08-22 17:01:59"}
