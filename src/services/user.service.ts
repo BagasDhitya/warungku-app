@@ -19,4 +19,13 @@ export class UserService {
         })
         return result
     }
+
+    public create(username: string, email: string, password: string) {
+        const result = this.prisma.user.create({
+            data: {
+                username, email, password
+            }
+        })
+        return result
+    }
 }

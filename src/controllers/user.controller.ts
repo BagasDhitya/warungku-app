@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { UserService } from "../services/user.service";
 import { getCache, setCache } from "../helpers/cacheConfig";
+import logger, { fileLogger } from "../helpers/logger";
 
 export class UserController {
     userService: UserService;
@@ -9,6 +10,7 @@ export class UserController {
         this.userService = new UserService();
         this.getAll = this.getAll.bind(this);
         this.getById = this.getById.bind(this);
+        this.create = this.create.bind(this)
     }
 
     public async getAll(req: Request, res: Response) {
@@ -73,6 +75,27 @@ export class UserController {
                 message: "Internal server error",
                 error: (error as Error).message
             });
+        }
+    }
+
+    public async create(req: Request, res: Response) {
+        try {
+            const { username, email, password } = req.body
+            const response = await this.userService.create(
+                username, email, password
+            )
+
+            // FS logger
+            fileLogger(`Created user : ${response.username} - ${response.email}`)
+
+            // Winston log
+            logger.info(`New user created`, { id: response.id_user, email: response.email })
+
+            res.status(201).json(response)
+        } catch (error) {
+            res.status(500).send({
+                message: 'Internal server error'
+            })
         }
     }
 }
